@@ -53,4 +53,4 @@ jobs:
           @semantic-release/git
           @semantic-release/changelog@3.0.0
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
