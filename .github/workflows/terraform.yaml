@@ -47,11 +47,6 @@ jobs:
       id: semantic   # You need an id to use output variables
       with:
         branch: master
-        semantic_version: 17.1.1
-        # Here, you can specify the version range for the semantic-release plugin or not
-        extra_plugins: |
-          @semantic-release/commit-analyzer
-          @semantic-release/release-notes-generator
-          @semantic-release/github                  
+        semantic_version: 17.1.1                 
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
