@@ -77,3 +77,14 @@ variable "external_secrets" {
   default     = {}
 }
 
+variable "nginx_ingress" {
+  description = "Customize nginx-ingress chart, see `nginx-ingress.tf` for supported values"
+  type        = any
+  default     = {}
+}
+
+variable "prometheus_operator" {
+  description = "Customize prometheus-operator chart, see `kube_prometheus.tf` for supported values"
+  type        = any
+  default     = {}
+}

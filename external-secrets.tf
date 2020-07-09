@@ -63,7 +63,7 @@ resource "helm_release" "external_secrets" {
 }
 
 resource "kubernetes_network_policy" "external_secrets_default_deny" {
-  count = local.jenkins_operator["create_ns"] && local.external_secrets["enabled"] && local.external_secrets["default_network_policy"] ? 1 : 0
+  count = local.external_secrets["create_ns"] && local.external_secrets["enabled"] && local.external_secrets["default_network_policy"] ? 1 : 0
 
   metadata {
     name      = "${kubernetes_namespace.external_secrets.*.metadata.0.name[count.index]}-default-deny"
