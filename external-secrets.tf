@@ -2,11 +2,11 @@ locals {
   external_secrets = merge(
     local.helm_defaults,
     {
-      name          = "external-secrets"
-      namespace     = "external-secrets"
-      chart         = "external-secrets"
-      repository    = local.helm_repository_external_secrets.name
-      create_ns     = false
+      name       = "external-secrets"
+      namespace  = "external-secrets"
+      chart      = "external-secrets"
+      repository = local.helm_repository_external_secrets.name
+      create_ns  = false
     },
     var.external_secrets
   )
