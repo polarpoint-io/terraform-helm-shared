@@ -6,7 +6,7 @@ locals {
       name       = "nginx-ingress"
       namespace  = "ingress-nginx"
       chart      = "nginx-ingress"
-      repository = local.helm_repository_stable.name
+      repository = local.helm_repository_stable.url
       use_nlb    = false
       use_l7     = false
     },
