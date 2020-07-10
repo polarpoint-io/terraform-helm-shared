@@ -44,5 +44,9 @@ jobs:
         
     - name: Semantic Release
       uses: cycjimmy/semantic-release-action@v2
+      id: semantic   # You need an id to use output variables
+      with:
+        branch: master
+        semantic_version: 17.1.1                 
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

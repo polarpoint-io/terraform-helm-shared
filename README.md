@@ -47,4 +47,48 @@ Some addons interface with AWS API, for example:
 
 ## Terraform docs
 <!--- BEGIN_TF_DOCS --->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+| helm | n/a |
+| kubectl | n/a |
+| kubernetes | n/a |
+| random | n/a |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| aws | AWS provider customization | `any` | `{}` | no |
+| cluster-name | Name of the Kubernetes cluster | `string` | `"sample-cluster"` | no |
+| cluster\_autoscaler | Customize cluster-autoscaler chart, see `cluster_autoscaler.tf` for supported values | `any` | `{}` | no |
+| cni\_metrics\_helper | Customize cni-metrics-helper deployment, see `cni_metrics_helper.tf` for supported values | `any` | `{}` | no |
+| eks | EKS cluster inputs | `any` | `{}` | no |
+| external\_secrets | Customise external-secrets chart, see `external-secrets.tf` for supported values | `any` | `{}` | no |
+| fluentd\_cloudwatch | Customize fluentd-cloudwatch chart, see `fluentd-cloudwatch.tf` for supported values | `any` | `{}` | no |
+| helm\_defaults | Customize default Helm behaviour | `any` | `{}` | no |
+| kiam | Customize kiam chart, see `kiam.tf` for supported values | `any` | `{}` | no |
+| metrics\_server | Customize metrics-server chart, see `metrics_server.tf` for supported values | `any` | `{}` | no |
+| nginx\_ingress | Customize nginx-ingress chart, see `nginx-ingress.tf` for supported values | `any` | `{}` | no |
+| npd | Customize node-problem-detector chart, see `npd.tf` for supported values | `any` | `{}` | no |
+| priority\_class | Customize a priority class for addons | `any` | `{}` | no |
+| priority\_class\_ds | Customize a priority class for addons daemonsets | `any` | `{}` | no |
+| prometheus\_operator | Customize prometheus-operator chart, see `kube_prometheus.tf` for supported values | `any` | `{}` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| grafana\_password | n/a |
+| kiam-server-role-arn | n/a |
+| kiam-server-role-name | n/a |
+
 <!--- END_TF_DOCS --->
