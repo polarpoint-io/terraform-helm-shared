@@ -5,10 +5,10 @@ locals {
       name          = "external-secrets"
       namespace     = "external-secrets"
       chart         = "external-secrets"
-      chart_version = "4.1.0"
-      version       = "4.1.0"
-      repository    = local.helm_repository_external_secrets.url
-      create_ns     = false
+      chart_version = "4.2.0"
+      version       = "4.2.0"
+      repository    = local.helm_repo_external_secrets.url
+      create_ns     = true
       skip_crds     = true
     },
     var.external_secrets

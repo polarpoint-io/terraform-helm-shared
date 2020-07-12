@@ -5,7 +5,7 @@ locals {
       name          = "metrics-server"
       namespace     = "metrics-server"
       chart         = "metrics-server"
-      repository    = local.helm_repository_stable.url
+      repository    = local.helm_repo_stable.url
       chart_version = "2.11.1"
       version       = "v0.3.6"
     },

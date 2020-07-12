@@ -5,7 +5,7 @@ locals {
       name                   = "prometheus-operator"
       namespace              = "monitoring"
       chart                  = "prometheus-operator"
-      repository             = local.helm_repository_stable.name
+      repository             = local.helm_repo_stable.url
       kiam_allowed_regexp    = "^$"
       enabled                = false
       chart_version          = "v8.13.8"

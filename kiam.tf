@@ -5,7 +5,7 @@ locals {
       name                        = "kiam"
       namespace                   = "kiam"
       chart                       = "kiam"
-      repository                  = local.helm_repository_kiam.name
+      repository                  = local.helm_repo_kiam.url
       server_use_host_network     = true
       create_iam_user             = true
       create_iam_resources        = true
