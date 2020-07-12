@@ -67,6 +67,7 @@ Some addons interface with AWS API, for example:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| argocd | Customise argocd chart, see `external-secrets.tf` for supported values | `any` | `{}` | no |
 | aws | AWS provider customization | `any` | `{}` | no |
 | cluster-name | Name of the Kubernetes cluster | `string` | `"sample-cluster"` | no |
 | cluster\_autoscaler | Customise cluster-autoscaler chart, see `cluster_autoscaler.tf` for supported values | `any` | `{}` | no |
