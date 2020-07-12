@@ -75,4 +75,9 @@ locals {
     url  = "https://godaddy.github.io/kubernetes-external-secrets/"
   }
 
+  helm_repo_argo = {
+    name = "argo"
+    url  = "https://argoproj.github.io/argo-helm"
+  }
+
 }

@@ -69,19 +69,19 @@ Some addons interface with AWS API, for example:
 |------|-------------|------|---------|:--------:|
 | aws | AWS provider customization | `any` | `{}` | no |
 | cluster-name | Name of the Kubernetes cluster | `string` | `"sample-cluster"` | no |
-| cluster\_autoscaler | Customize cluster-autoscaler chart, see `cluster_autoscaler.tf` for supported values | `any` | `{}` | no |
-| cni\_metrics\_helper | Customize cni-metrics-helper deployment, see `cni_metrics_helper.tf` for supported values | `any` | `{}` | no |
+| cluster\_autoscaler | Customise cluster-autoscaler chart, see `cluster_autoscaler.tf` for supported values | `any` | `{}` | no |
+| cni\_metrics\_helper | Customise cni-metrics-helper deployment, see `cni_metrics_helper.tf` for supported values | `any` | `{}` | no |
 | eks | EKS cluster inputs | `any` | `{}` | no |
 | external\_secrets | Customise external-secrets chart, see `external-secrets.tf` for supported values | `any` | `{}` | no |
-| fluentd\_cloudwatch | Customize fluentd-cloudwatch chart, see `fluentd-cloudwatch.tf` for supported values | `any` | `{}` | no |
-| helm\_defaults | Customize default Helm behaviour | `any` | `{}` | no |
-| kiam | Customize kiam chart, see `kiam.tf` for supported values | `any` | `{}` | no |
-| metrics\_server | Customize metrics-server chart, see `metrics_server.tf` for supported values | `any` | `{}` | no |
-| nginx\_ingress | Customize nginx-ingress chart, see `nginx-ingress.tf` for supported values | `any` | `{}` | no |
-| npd | Customize node-problem-detector chart, see `npd.tf` for supported values | `any` | `{}` | no |
-| priority\_class | Customize a priority class for addons | `any` | `{}` | no |
-| priority\_class\_ds | Customize a priority class for addons daemonsets | `any` | `{}` | no |
-| prometheus\_operator | Customize prometheus-operator chart, see `kube_prometheus.tf` for supported values | `any` | `{}` | no |
+| fluentd\_cloudwatch | Customise fluentd-cloudwatch chart, see `fluentd-cloudwatch.tf` for supported values | `any` | `{}` | no |
+| helm\_defaults | Customise default Helm behaviour | `any` | `{}` | no |
+| kiam | Customise kiam chart, see `kiam.tf` for supported values | `any` | `{}` | no |
+| metrics\_server | Customise metrics-server chart, see `metrics_server.tf` for supported values | `any` | `{}` | no |
+| nginx\_ingress | Customise nginx-ingress chart, see `nginx-ingress.tf` for supported values | `any` | `{}` | no |
+| npd | Customise node-problem-detector chart, see `npd.tf` for supported values | `any` | `{}` | no |
+| priority\_class | Customise a priority class for addons | `any` | `{}` | no |
+| priority\_class\_ds | Customise a priority class for addons daemonsets | `any` | `{}` | no |
+| prometheus\_operator | Customise prometheus-operator chart, see `kube_prometheus.tf` for supported values | `any` | `{}` | no |
 
 ## Outputs
 

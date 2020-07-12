@@ -16,57 +16,57 @@ variable "eks" {
 }
 
 variable "cluster_autoscaler" {
-  description = "Customize cluster-autoscaler chart, see `cluster_autoscaler.tf` for supported values"
+  description = "Customise cluster-autoscaler chart, see `cluster_autoscaler.tf` for supported values"
   type        = any
   default     = {}
 }
 
 variable "kiam" {
-  description = "Customize kiam chart, see `kiam.tf` for supported values"
+  description = "Customise kiam chart, see `kiam.tf` for supported values"
   type        = any
   default     = {}
 }
 
 variable "metrics_server" {
-  description = "Customize metrics-server chart, see `metrics_server.tf` for supported values"
+  description = "Customise metrics-server chart, see `metrics_server.tf` for supported values"
   type        = any
   default     = {}
 }
 
 variable "fluentd_cloudwatch" {
-  description = "Customize fluentd-cloudwatch chart, see `fluentd-cloudwatch.tf` for supported values"
+  description = "Customise fluentd-cloudwatch chart, see `fluentd-cloudwatch.tf` for supported values"
   type        = any
   default     = {}
 }
 
 variable "npd" {
-  description = "Customize node-problem-detector chart, see `npd.tf` for supported values"
+  description = "Customise node-problem-detector chart, see `npd.tf` for supported values"
   type        = any
   default     = {}
 }
 
 
 variable "cni_metrics_helper" {
-  description = "Customize cni-metrics-helper deployment, see `cni_metrics_helper.tf` for supported values"
+  description = "Customise cni-metrics-helper deployment, see `cni_metrics_helper.tf` for supported values"
   type        = any
   default     = {}
 }
 
 
 variable "helm_defaults" {
-  description = "Customize default Helm behaviour"
+  description = "Customise default Helm behaviour"
   type        = any
   default     = {}
 }
 
 variable "priority_class" {
-  description = "Customize a priority class for addons"
+  description = "Customise a priority class for addons"
   type        = any
   default     = {}
 }
 
 variable "priority_class_ds" {
-  description = "Customize a priority class for addons daemonsets"
+  description = "Customise a priority class for addons daemonsets"
   type        = any
   default     = {}
 }
@@ -78,13 +78,19 @@ variable "external_secrets" {
 }
 
 variable "nginx_ingress" {
-  description = "Customize nginx-ingress chart, see `nginx-ingress.tf` for supported values"
+  description = "Customise nginx-ingress chart, see `nginx-ingress.tf` for supported values"
   type        = any
   default     = {}
 }
 
 variable "prometheus_operator" {
-  description = "Customize prometheus-operator chart, see `kube_prometheus.tf` for supported values"
+  description = "Customise prometheus-operator chart, see `kube_prometheus.tf` for supported values"
+  type        = any
+  default     = {}
+}
+
+variable "argocd" {
+  description = "Customise argocd chart, see `external-secrets.tf` for supported values"
   type        = any
   default     = {}
 }
