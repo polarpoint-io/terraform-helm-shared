@@ -6,7 +6,7 @@ locals {
       namespace     = "external-secrets"
       chart         = "external-secrets"
       chart_version = "4.1.0"
-      version       = "4.1.0"
+      version       = ""
       repository    = local.helm_repository_external_secrets.url
       create_ns     = false
     },
