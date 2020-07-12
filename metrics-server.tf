@@ -2,12 +2,12 @@ locals {
   metrics_server = merge(
     local.helm_defaults,
     {
-      name       = "metrics-server"
-      namespace  = "metrics-server"
-      chart      = "metrics-server"
-      repository = local.helm_repository_stable.url
-      chart_version          = "2.11.1"
-      version                = "v0.3.6"
+      name          = "metrics-server"
+      namespace     = "metrics-server"
+      chart         = "metrics-server"
+      repository    = local.helm_repository_stable.url
+      chart_version = "2.11.1"
+      version       = "v0.3.6"
     },
     var.metrics_server
   )
