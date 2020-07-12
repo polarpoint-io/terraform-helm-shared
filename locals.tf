@@ -71,7 +71,7 @@ locals {
   }
 
   helm_repository_external_secrets = {
-    name = "external_secrets"
+    name = "external-secrets"
     url  = "https://godaddy.github.io/kubernetes-external-secrets/"
   }
 
